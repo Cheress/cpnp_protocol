@@ -1,4 +1,4 @@
-# CPNP — Crawl Policy Negotiation Protocol for automated web craewlers
+# CPNP - Crawl Policy Negotiation Protocol for automated web craewlers
 
 A working prototype of a protocol that lets web crawlers and servers **negotiate**
 and **cryptographically enforce** data-access agreements before crawling begins —
