@@ -1,0 +1,15 @@
+dimension,policy_intent,robots_txt,cpnp,robots_mechanism,cpnp_mechanism
+D1,Restrict crawling to specific URL paths,YES,YES,Disallow: /path directives,allowed_paths / disallowed_paths in Policy Manifest
+D2,Limit crawl request rate,PARTIAL,YES,"Crawl-delay (non-standard, widely ignored, not in RFC 9309)","max_crawl_rate, enforced via signed token + middleware"
+D3,Discriminate access by crawler identity,PARTIAL,YES,User-agent matching (trivially spoofable string),"Cryptographic DID identity, unforgeable"
+D4,Permit access by declared purpose (research vs AI training),NO,YES,No purpose concept exists in robots.txt,declared_purpose checked against allowed_purposes + VC
+D5,Bind access to a verifiable operator identity,NO,YES,No authentication mechanism,W3C Verifiable Credential issued by trusted CA
+D6,Restrict downstream data use (no AI training),NO,YES,No data-use semantics,data_use_restrictions in Policy Manifest + token claim
+D7,Prohibit commercial resale of crawled data,NO,YES,No data-use semantics,data_use_restrictions: no-commercial-resale
+D8,Grant time-limited access (temporal window),NO,YES,No expiry concept,Token exp claim + policy_expires_at
+D9,Negotiate terms bilaterally (counter-offers),NO,YES,Unilateral declaration only,Alternating-offers negotiation engine
+D10,Produce a non-repudiable record of agreement,NO,YES,No agreement artefact,EdDSA-signed JWT Access Token
+D11,Enforce compliance cryptographically (not advisory),NO,YES,Advisory only; honour system,Token signature verified on every request; 451 on violation
+D12,Provide an auditable per-request compliance trail,NO,YES,No logging/attribution mechanism,SQLite audit log keyed by crawler DID + token
+D13,Express jurisdiction-specific restrictions,NO,YES,No jurisdiction field,jurisdiction attribute in Verifiable Credential
+D14,Support compensation / paid-access terms,NO,YES,No commercial terms,Optional compensation terms in Policy Manifest (extensible)

@@ -1,0 +1,21 @@
+# render.yaml — One-click deploy to Render.com (free tier)
+#
+# HOW TO USE:
+#   1. Push this whole cpnp/ folder to a GitHub repository
+#   2. Go to https://render.com → New → Blueprint
+#   3. Connect your GitHub repo
+#   4. Render reads this file and deploys automatically
+#   5. You get a public URL like https://cpnp-server.onrender.com
+#
+
+services:
+  - type: web
+    name: cpnp-server
+    runtime: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "uvicorn app.server:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.9"
+    healthCheckPath: /health

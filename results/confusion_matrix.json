@@ -1,0 +1,12 @@
+{
+  "true_positive_adversarial_rejected": 1300,
+  "true_negative_legitimate_accepted": 100,
+  "false_positive_legitimate_rejected": 0,
+  "false_negative_adversarial_accepted": 0,
+  "detection_rate_pct": 100.0,
+  "precision_pct": 100.0,
+  "overall_accuracy_pct": 100.0,
+  "total_trials": 1400,
+  "scenarios": 14,
+  "trials_per_scenario": 100
+}

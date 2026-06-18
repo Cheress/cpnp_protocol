@@ -1,0 +1,234 @@
+{
+  "measured_on": "2026-06-14T08:58:04.551379+00:00",
+  "platform": "macOS-15.7.4-arm64-arm-64bit",
+  "python": "3.11.6",
+  "latency": {
+    "mean_ms": 0.6236,
+    "median_ms": 0.6075,
+    "p95_ms": 0.7112,
+    "p99_ms": 0.8162,
+    "min_ms": 0.5828,
+    "max_ms": 0.958,
+    "iterations": 1000
+  },
+  "security": {
+    "scenarios": 14,
+    "trials_per_scenario": 100,
+    "total_trials": 1400,
+    "true_positive": 1300,
+    "true_negative": 100,
+    "false_positive": 0,
+    "false_negative": 0,
+    "detection_rate_pct": 100.0,
+    "false_positive_rate_pct": 0.0,
+    "overall_accuracy_pct": 100.0,
+    "per_scenario": [
+      {
+        "scenario": "L1_legitimate",
+        "correct": 100,
+        "trials": 100,
+        "accuracy_pct": 100.0
+      },
+      {
+        "scenario": "A1_no_token",
+        "correct": 100,
+        "trials": 100,
+        "accuracy_pct": 100.0
+      },
+      {
+        "scenario": "A2_forged_sig",
+        "correct": 100,
+        "trials": 100,
+        "accuracy_pct": 100.0
+      },
+      {
+        "scenario": "A3_tampered_payload",
+        "correct": 100,
+        "trials": 100,
+        "accuracy_pct": 100.0
+      },
+      {
+        "scenario": "A4_expired",
+        "correct": 100,
+        "trials": 100,
+        "accuracy_pct": 100.0
+      },
+      {
+        "scenario": "A5_wrong_issuer",
+        "correct": 100,
+        "trials": 100,
+        "accuracy_pct": 100.0
+      },
+      {
+        "scenario": "A6_wrong_algorithm",
+        "correct": 100,
+        "trials": 100,
+        "accuracy_pct": 100.0
+      },
+      {
+        "scenario": "A7_path_violation",
+        "correct": 100,
+        "trials": 100,
+        "accuracy_pct": 100.0
+      },
+      {
+        "scenario": "A8_tampered_intent",
+        "correct": 100,
+        "trials": 100,
+        "accuracy_pct": 100.0
+      },
+      {
+        "scenario": "A9_identity_spoof",
+        "correct": 100,
+        "trials": 100,
+        "accuracy_pct": 100.0
+      },
+      {
+        "scenario": "A10_expired_credential",
+        "correct": 100,
+        "trials": 100,
+        "accuracy_pct": 100.0
+      },
+      {
+        "scenario": "A11_revoked_credential",
+        "correct": 100,
+        "trials": 100,
+        "accuracy_pct": 100.0
+      },
+      {
+        "scenario": "A12_tampered_credential",
+        "correct": 100,
+        "trials": 100,
+        "accuracy_pct": 100.0
+      },
+      {
+        "scenario": "A13_untrusted_ca",
+        "correct": 100,
+        "trials": 100,
+        "accuracy_pct": 100.0
+      }
+    ]
+  },
+  "convergence": {
+    "scenarios": 5000,
+    "seed": 42,
+    "formula": "N_max = ceil((R_max - R_offer0)/c) + 1",
+    "theoretical_bound": 6,
+    "configured_max_rounds": 6,
+    "mean_rounds_all": 3.156,
+    "mean_rounds_agreed": 2.052,
+    "pct_agreements_within_3": 94.62,
+    "pct_terminated_within_bound": 100.0,
+    "round_distribution": {
+      "1": 621,
+      "2": 1632,
+      "3": 1493,
+      "4": 37,
+      "5": 34,
+      "6": 1183
+    },
+    "outcomes": {
+      "AGREED": 2043,
+      "REJECTED": 2957
+    }
+  },
+  "throughput": {
+    "handshakes_per_sec_per_core": 1666.8,
+    "token_checks_per_sec_per_core": 7005.0,
+    "per_request_overhead_ms": 0.1428,
+    "duration_s_per_test": 5.0
+  },
+  "expressiveness": {
+    "total_dimensions": 14,
+    "robots_fully_expressible": 1,
+    "robots_partially_expressible": 2,
+    "robots_not_expressible": 11,
+    "cpnp_expressible": 14,
+    "dimensions": [
+      {
+        "id": "D1",
+        "intent": "Path restriction",
+        "robots": "native",
+        "cpnp": "yes"
+      },
+      {
+        "id": "D2",
+        "intent": "Rate limiting",
+        "robots": "partial",
+        "cpnp": "yes"
+      },
+      {
+        "id": "D3",
+        "intent": "Identity discrimination",
+        "robots": "partial",
+        "cpnp": "yes"
+      },
+      {
+        "id": "D4",
+        "intent": "Purpose-based access",
+        "robots": "none",
+        "cpnp": "yes"
+      },
+      {
+        "id": "D5",
+        "intent": "Verifiable operator identity",
+        "robots": "none",
+        "cpnp": "yes"
+      },
+      {
+        "id": "D6",
+        "intent": "Data-use restriction",
+        "robots": "none",
+        "cpnp": "yes"
+      },
+      {
+        "id": "D7",
+        "intent": "No commercial resale",
+        "robots": "none",
+        "cpnp": "yes"
+      },
+      {
+        "id": "D8",
+        "intent": "Temporal access window",
+        "robots": "none",
+        "cpnp": "yes"
+      },
+      {
+        "id": "D9",
+        "intent": "Bilateral negotiation",
+        "robots": "none",
+        "cpnp": "yes"
+      },
+      {
+        "id": "D10",
+        "intent": "Non-repudiable agreement",
+        "robots": "none",
+        "cpnp": "yes"
+      },
+      {
+        "id": "D11",
+        "intent": "Cryptographic enforcement",
+        "robots": "none",
+        "cpnp": "yes"
+      },
+      {
+        "id": "D12",
+        "intent": "Auditable compliance trail",
+        "robots": "none",
+        "cpnp": "yes"
+      },
+      {
+        "id": "D13",
+        "intent": "Jurisdiction restriction",
+        "robots": "none",
+        "cpnp": "yes"
+      },
+      {
+        "id": "D14",
+        "intent": "Compensation / paid access",
+        "robots": "none",
+        "cpnp": "yes"
+      }
+    ]
+  }
+}

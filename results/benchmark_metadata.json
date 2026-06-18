@@ -1,0 +1,24 @@
+{
+  "benchmark_timestamp": "2026-06-10T05:35:34.503941+00:00",
+  "iterations": 1000,
+  "warmup": 100,
+  "python_version": "3.12.3",
+  "platform": "Linux-6.18.5-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "signature_scheme": "Ed25519 (EdDSA)",
+  "token_format": "JWT (RFC 7519) with EdDSA signature",
+  "operations_measured": [
+    "10_e2e_handshake",
+    "1_keygen",
+    "2_did_register",
+    "3_vc_issue",
+    "4_vc_verify",
+    "5_intent_sign",
+    "6_intent_verify",
+    "7_negotiate",
+    "8_token_issue",
+    "9_token_verify"
+  ],
+  "clock": "time.perf_counter_ns (monotonic, nanosecond resolution)",
+  "note": "All operations call the real CPNP MVP cryptographic functions. Latencies are wall-clock per-operation after warmup discard."
+}

@@ -1,0 +1,8 @@
+manuscript_claim,measured_value,detail
+Latency 'under 180ms' / '147ms',"0.6236 ms mean (p95 0.7112 ms, p99 0.8162 ms)",over 1000 iterations
+'1.4 mean rounds to agreement',2.052 mean rounds to agreement,over 5000 scenarios; 94.62% within 3 rounds
+'89.2% agreement rate',scenario-dependent (not a fixed protocol property),2043 agreed / 2957 rejected in random mix
+'max N=5 rounds' (unjustified),N_max = 6 (derived); cap corrected to 6,N_max = ceil((R_max - R_offer0)/c) + 1
+'100% adversarial detection',"100.0% detection, 0 false positives",1400 trials across 14 attack types
+"Expressiveness 'CPNP 14, robots.txt 4'",CPNP 14/14; robots.txt 1 native + 2 partial,14 governance dimensions assessed
+(new) Throughput,1667 handshakes/s/core; 7005 checks/s,0.1428 ms per-request overhead

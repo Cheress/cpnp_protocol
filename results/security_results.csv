@@ -1,0 +1,15 @@
+scenario,type,expected,trials,correct,accuracy_pct
+L1_legitimate,legitimate,ACCEPT,100,100,100.0
+A1_no_token,adversarial,REJECT,100,100,100.0
+A2_forged_sig,adversarial,REJECT,100,100,100.0
+A3_tampered_payload,adversarial,REJECT,100,100,100.0
+A4_expired,adversarial,REJECT,100,100,100.0
+A5_wrong_issuer,adversarial,REJECT,100,100,100.0
+A6_wrong_algorithm,adversarial,REJECT,100,100,100.0
+A7_path_violation,adversarial,REJECT,100,100,100.0
+A8_tampered_intent,adversarial,REJECT,100,100,100.0
+A9_identity_spoof,adversarial,REJECT,100,100,100.0
+A10_expired_credential,adversarial,REJECT,100,100,100.0
+A11_revoked_credential,adversarial,REJECT,100,100,100.0
+A12_tampered_credential,adversarial,REJECT,100,100,100.0
+A13_untrusted_ca,adversarial,REJECT,100,100,100.0

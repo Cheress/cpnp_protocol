@@ -1,0 +1,6 @@
+operation,ops_per_sec,mean_latency_ms
+token_verify_per_request,7688.6,0.1301
+credential_verify,5810.2,0.1721
+intent_verify,5738.6,0.1743
+token_issue,17451.6,0.0573
+full_handshake,1591.0,0.6285
