@@ -1,12 +1,3 @@
-"""
-cpnp/app/server.py  —  WEEK 4: Dashboard + Polish
-────────────────────────────────────────────────────
-New in Week 4:
-  • GET /status              — polling endpoint returning full live state as JSON
-  • GET /dashboard           — the supervisor demo dashboard (single HTML page)
-  • POST /cpnp/policy/update — change policy live without restarting server
-  • POST /demo/crawl         — trigger a compliant or adversarial crawl from the UI
-"""
 from __future__ import annotations
 import uuid, json, time, threading
 from typing import Optional

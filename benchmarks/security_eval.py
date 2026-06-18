@@ -1,6 +1,4 @@
 """
-cpnp/benchmarks/security_eval.py
-──────────────────────────────────
 CPNP Security / Correctness Evaluation — produces MEASURED detection results.
 
 It runs each scenario N times and records the outcome, producing a confusion
@@ -116,14 +114,14 @@ def run_scenario(name, ctx):
     s = ctx["server_kp"]; ca = ctx["ca"]; ck = ctx["crawler_kp"]
     vc = ctx["vc"]; agreed = ctx["agreed_paths"]; good = ctx["good_token"]
 
-    # ── Legitimate ────────────────────────────────────────────────────────────
+    # ── Legitimate 
     if name == "L1_legitimate":
         ok_t, _ = jwt_verify(s, good)
         ok_p = path_in_scope("/blog", agreed)
         ok_v = verify_credential(vc, ca).valid
         return "ACCEPT", ("ACCEPT" if (ok_t and ok_p and ok_v) else "REJECT")
 
-    # ── Token-layer attacks ─────────────────────────────────────────────────
+    # ── Token-layer attacks 
     if name == "A1_no_token":
         ok, _ = jwt_verify(s, "")
         return "REJECT", ("ACCEPT" if ok else "REJECT")
@@ -155,7 +153,7 @@ def run_scenario(name, ctx):
         ok_p = path_in_scope("/admin", agreed)
         return "REJECT", ("ACCEPT" if (ok_t and ok_p) else "REJECT")
 
-    # ── Intent-signature attacks ─────────────────────────────────────────────
+    # ── Intent-signature attacks 
     if name == "A8_tampered_intent":
         intent = {"crawler_did": ck.did, "declared_purpose": "ResearchCrawler",
                   "requested_crawl_rate": 20, "requested_paths": ["/blog"],
@@ -175,7 +173,7 @@ def run_scenario(name, ctx):
         res = verify_intent_signature(signed)
         return "REJECT", ("ACCEPT" if res.valid else "REJECT")
 
-    # ── Credential attacks ───────────────────────────────────────────────────
+    # ── Credential attacks 
     if name == "A10_expired_credential":
         exp_vc = json.loads(json.dumps(vc))
         exp_vc["expirationDate"] = (datetime.now(timezone.utc) - timedelta(days=1)).strftime("%Y-%m-%dT%H:%M:%SZ")

@@ -1,6 +1,4 @@
 """
-cpnp/benchmarks/expressiveness_eval.py
-────────────────────────────────────────
 CPNP Expressiveness Evaluation — measured policy-encoding capability.
 
 Run:

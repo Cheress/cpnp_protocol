@@ -1,6 +1,4 @@
 """
-cpnp/benchmarks/run_all.py
-────────────────────────────
 Master runner — executes all four CPNP evaluation experiments in sequence
 and produces a consolidated results summary.
 

@@ -1,9 +1,3 @@
-"""
-cpnp/app/dashboard.py
-──────────────────────
-Week 4 — Supervisor Demo Dashboard.
-Served at GET /dashboard
-"""
 from fastapi import APIRouter
 from fastapi.responses import HTMLResponse
 
@@ -153,7 +147,7 @@ table.log tr:hover td { background:#1c2128; }
 <div class="topbar">
   <div class="pulse" id="pulse"></div>
   <h1>⚡ CPNP Live Dashboard</h1>
-  <span class="sub">Crawl Policy Negotiation Protocol — Supervisor Demo</span>
+  <span class="sub">Crawl Policy Negotiation Protocol — Demo</span>
   <span class="status-badge badge-ok" id="conn-badge">● LIVE</span>
   <span class="mono" style="color:var(--muted);font-size:.72rem" id="last-update">—</span>
 </div>
@@ -481,10 +475,10 @@ setInterval(poll, 2000);
 </html>"""
 
 @router.get("/dashboard", response_class=HTMLResponse,
-            summary="Supervisor Demo Dashboard — live CPNP monitor")
+            summary="Demo Dashboard — live CPNP monitor")
 def dashboard():
     """
-    The Week 4 supervisor demo dashboard.
+    Demo dashboard.
     Polls /status every 2 seconds and renders live state.
     """
     return HTMLResponse(DASHBOARD_HTML)

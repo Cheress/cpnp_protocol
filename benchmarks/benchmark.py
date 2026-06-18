@@ -1,6 +1,4 @@
 """
-cpnp/benchmarks/benchmark.py
-─────────────────────────────
 CPNP Performance Benchmark Harness — produces MEASURED, reproducible results.
 
 This harness exercises the REAL cryptographic and protocol algorithms from the
@@ -96,7 +94,7 @@ def negotiate_score(policy, req_rate, req_paths):
     return max(0.0, round(score, 4)), agreed_rate, agreed_paths
 
 
-# ── Timing utility ────────────────────────────────────────────────────────────
+# ── Timing utility
 def time_op(fn, iterations, warmup):
     """Times fn() over `iterations` runs after `warmup` discarded runs.
     Returns list of per-call latencies in milliseconds."""
@@ -129,7 +127,7 @@ def stats(samples):
     }
 
 
-# ── Benchmark scenarios setup ─────────────────────────────────────────────────
+# ── Benchmark scenarios setup 
 def setup():
     """Builds the fixed actors used across all benchmarks."""
     server_kp = generate_keypair("bench-server")
@@ -197,8 +195,7 @@ def build_operations(ctx):
 
     ops["9_token_verify"] = lambda: jwt_verify(server_kp, token)
 
-    # End-to-end: the full pre-crawl handshake (everything except keygen,
-    # since identity setup is a one-time cost, not per-handshake)
+  
     def _e2e():
         si = build_signed_intent(intent, crawler_kp)          # crawler signs
         verify_intent_signature(si)                            # server verifies sig
@@ -213,7 +210,7 @@ def build_operations(ctx):
     return ops
 
 
-# ── Main ──────────────────────────────────────────────────────────────────────
+# ── Main 
 def main():
     ap = argparse.ArgumentParser(description="CPNP performance benchmark")
     ap.add_argument("--iterations", type=int, default=1000)

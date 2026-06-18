@@ -1,56 +1,3 @@
-"""
-cpnp/audit/robots_audit.py
-────────────────────────────
-CPNP Empirical robots.txt Audit Tool.
-
-Fetches the real robots.txt from each of the 50 websites and measures, for
-each one, which of the 14 CPNP policy dimensions that file can and cannot
-express. Produces per-site results, per-stratum aggregates, and an overall
-expressiveness-gap figure that empirically grounds the CPNP problem statement.
-
-WHAT IT MEASURES (the 14 dimensions, same as expressiveness_eval.py):
-  D1  Path restriction            — CAN robots.txt do this?  (yes, by design)
-  D2  Rate limiting               — Crawl-delay present? (non-standard)
-  D3  Identity discrimination     — User-agent specific rules present?
-  D4  Purpose-based access        — (impossible in robots.txt)
-  D5  Verifiable operator identity— (impossible)
-  D6  Data-use restriction        — (impossible; but we detect AI-bot blocks)
-  D7  No commercial resale        — (impossible)
-  D8  Temporal access window      — (impossible)
-  D9  Bilateral negotiation       — (impossible)
-  D10 Non-repudiable agreement    — (impossible)
-  D11 Cryptographic enforcement   — (impossible; advisory only)
-  D12 Auditable compliance trail  — (impossible)
-  D13 Jurisdiction restriction    — (impossible)
-  D14 Compensation / paid access  — (impossible)
-
-For the dimensions robots.txt CAN attempt (D1, D2, D3, and partial D6 via
-named AI-bot blocks), the tool inspects the actual file content to record
-whether each site uses them. For dimensions robots.txt structurally cannot
-express, it records "not expressible" — the structural gap CPNP fills.
-
-It additionally records RICH DESCRIPTIVE DATA:
-  - number of User-agent groups
-  - whether AI-specific bots are named (GPTBot, CCBot, Google-Extended, etc.)
-  - presence of Crawl-delay
-  - presence of Sitemap
-  - total directive count
-  - file size
-
-NETWORK NOTE: This tool requires internet access. It is designed to be run on
-the researcher's own machine, NOT in a sandbox. It fetches only the public
-/robots.txt file from each domain — no site content is crawled.
-
-Run:
-  pip install requests
-  python audit/robots_audit.py
-Outputs:
-  audit/results/robots_raw/<domain>.txt        (saved copy of each robots.txt)
-  audit/results/audit_per_site.csv             (one row per site)
-  audit/results/audit_per_dimension.csv        (one row per dimension)
-  audit/results/audit_per_stratum.csv          (aggregates per category)
-  audit/results/audit_summary.json             (headline numbers)
-"""
 from __future__ import annotations
 import sys, os, csv, json, time, re
 from datetime import datetime, timezone
@@ -67,10 +14,7 @@ AI_BOTS = [
     "Meta-ExternalAgent", "Amazonbot", "YouBot", "Timpibot",
 ]
 
-# The 14 dimensions: (id, label, robots_capability)
-#   "native"   = robots.txt is designed to express this
-#   "partial"  = robots.txt can approximate it but non-standard/spoofable/ignored
-#   "none"     = structurally impossible in robots.txt
+
 DIMENSIONS = [
     ("D1",  "Path restriction",             "native"),
     ("D2",  "Rate limiting",                "partial"),
@@ -92,7 +36,7 @@ DIMENSIONS = [
 def fetch_robots(url, timeout=15):
     """Fetches a robots.txt. Returns (status, text, error)."""
     import requests
-    headers = {"User-Agent": "CPNP-Research-Audit/1.0 (academic study; +https://jkuat.ac.ke)"}
+    headers = {"User-Agent": "CPNP-Research-Audit/1.0 (academic study)"}
     try:
         r = requests.get(url, headers=headers, timeout=timeout, allow_redirects=True)
         return r.status_code, r.text, ""

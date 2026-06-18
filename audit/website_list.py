@@ -1,6 +1,4 @@
 """
-cpnp/audit/website_list.py
-────────────────────────────
 The 50 real websites for the robots.txt expressiveness audit.
 
 SELECTION METHODOLOGY :

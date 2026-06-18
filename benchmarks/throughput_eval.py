@@ -1,6 +1,4 @@
 """
-cpnp/benchmarks/throughput_eval.py
-────────────────────────────────────
 CPNP Throughput Evaluation — measured operations-per-second and overhead.
 
 Run:

@@ -1,6 +1,4 @@
 """
-cpnp/benchmarks/convergence_eval.py
-─────────────────────────────────────
 CPNP Negotiation Convergence Analysis — formulates and MEASURES the round bound.
 
 THE FORMULATION:
