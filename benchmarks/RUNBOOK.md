@@ -35,7 +35,7 @@ so all three metrics are computed exactly.
 
 Terminal 1, robots mode (advisory):
 ```bash
-cd benchmark_crawlers
+cd benchmarks
 python3 server/test_server.py --port 8080 --mode robots
 ```
 
@@ -147,45 +147,3 @@ python3 metrics/compute_metrics.py --report
 
 Produces the final table (also in `results/benchmark_results.csv`):
 
-```
-Crawler              Mode    Coverage  Politeness  Fidelity
-Naive (robots)       robots     1.000       1.000     0.000
-Naive (cpnp)         cpnp       1.000       1.000     1.000
-Scrapy (obey)        robots     1.000       1.000     1.000
-Scrapy (ignore)      robots     1.000       ~         0.000
-Scrapy (cpnp)        cpnp       1.000       1.000     1.000
-Nutch                robots     ...         ...       ...
-Heritrix             robots     ...         ...       ...
-```
-
----
-
-## How to write this up (Results and Discussion)
-
-The objective's benchmark clause is satisfied by this table. The discussion
-should make three points:
-
-1. **Well-behaved crawlers already respect robots.txt.** Scrapy, Nutch, and
-   Heritrix in default mode achieve high policy-fidelity — but only by their own
-   choice, because they elect to honour an advisory file.
-
-2. **The same crawlers can ignore robots.txt trivially.** A single configuration
-   flag (`obey=false`, `robotsPolicyName=ignore`) drops fidelity to zero. The
-   server is powerless to prevent this in robots mode.
-
-3. **CPNP enforcement makes fidelity independent of crawler goodwill.** Under
-   CPNP mode, forbidden fetches are blocked with HTTP 451 regardless of the
-   crawler's configuration, forcing fidelity to 1.0. This is the core
-   contribution: policy compliance becomes a property of the server, not a
-   favour from the crawler.
-
----
-
-## Honest framing for the thesis
-
-State clearly that coverage and politeness are dimensions on which CPNP does not
-compete with the crawlers — a crawler retrieves pages; CPNP governs whether
-retrieval is permitted. The meaningful axis is **policy-fidelity**, and there
-CPNP's contribution is decisive. Report coverage and politeness for completeness
-(they show CPNP does not impair legitimate crawling), but centre the discussion
-on fidelity.
