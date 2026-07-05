@@ -1,0 +1,93 @@
+{"ts": 1783276505.17119, "iso": "2026-07-05T18:35:05.171190+00:00", "path": "/", "class": "allowed", "status": 200, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.172132, "iso": "2026-07-05T18:35:05.172132+00:00", "path": "/public/page1.html", "class": "allowed", "status": 200, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.1727722, "iso": "2026-07-05T18:35:05.172773+00:00", "path": "/public/page2.html", "class": "allowed", "status": 200, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.173321, "iso": "2026-07-05T18:35:05.173321+00:00", "path": "/public/page3.html", "class": "allowed", "status": 200, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.1738071, "iso": "2026-07-05T18:35:05.173807+00:00", "path": "/public/page4.html", "class": "allowed", "status": 200, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.1744, "iso": "2026-07-05T18:35:05.174400+00:00", "path": "/public/page5.html", "class": "allowed", "status": 200, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.1749592, "iso": "2026-07-05T18:35:05.174959+00:00", "path": "/public/page6.html", "class": "allowed", "status": 200, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.175464, "iso": "2026-07-05T18:35:05.175464+00:00", "path": "/public/page7.html", "class": "allowed", "status": 200, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.1759381, "iso": "2026-07-05T18:35:05.175938+00:00", "path": "/public/page8.html", "class": "allowed", "status": 200, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.1763651, "iso": "2026-07-05T18:35:05.176365+00:00", "path": "/public/page9.html", "class": "allowed", "status": 200, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.1767821, "iso": "2026-07-05T18:35:05.176783+00:00", "path": "/public/page10.html", "class": "allowed", "status": 200, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.177249, "iso": "2026-07-05T18:35:05.177250+00:00", "path": "/public/page11.html", "class": "allowed", "status": 200, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.177679, "iso": "2026-07-05T18:35:05.177680+00:00", "path": "/public/page12.html", "class": "allowed", "status": 200, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.178119, "iso": "2026-07-05T18:35:05.178119+00:00", "path": "/public/page13.html", "class": "allowed", "status": 200, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.1785312, "iso": "2026-07-05T18:35:05.178531+00:00", "path": "/public/page14.html", "class": "allowed", "status": 200, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.178886, "iso": "2026-07-05T18:35:05.178887+00:00", "path": "/public/page15.html", "class": "allowed", "status": 200, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.179371, "iso": "2026-07-05T18:35:05.179371+00:00", "path": "/public/page16.html", "class": "allowed", "status": 200, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.179889, "iso": "2026-07-05T18:35:05.179889+00:00", "path": "/public/page17.html", "class": "allowed", "status": 200, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.1805649, "iso": "2026-07-05T18:35:05.180566+00:00", "path": "/public/page18.html", "class": "allowed", "status": 200, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.1810272, "iso": "2026-07-05T18:35:05.181027+00:00", "path": "/public/page19.html", "class": "allowed", "status": 200, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.181406, "iso": "2026-07-05T18:35:05.181406+00:00", "path": "/public/page20.html", "class": "allowed", "status": 200, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.1818528, "iso": "2026-07-05T18:35:05.181853+00:00", "path": "/private/secret1.html", "class": "forbidden", "status": 451, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.1823208, "iso": "2026-07-05T18:35:05.182321+00:00", "path": "/private/secret2.html", "class": "forbidden", "status": 451, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.1827211, "iso": "2026-07-05T18:35:05.182721+00:00", "path": "/private/secret3.html", "class": "forbidden", "status": 451, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.1832168, "iso": "2026-07-05T18:35:05.183217+00:00", "path": "/private/secret4.html", "class": "forbidden", "status": 451, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.1836438, "iso": "2026-07-05T18:35:05.183644+00:00", "path": "/private/secret5.html", "class": "forbidden", "status": 451, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.184077, "iso": "2026-07-05T18:35:05.184077+00:00", "path": "/private/secret6.html", "class": "forbidden", "status": 451, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.184523, "iso": "2026-07-05T18:35:05.184523+00:00", "path": "/private/secret7.html", "class": "forbidden", "status": 451, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.18495, "iso": "2026-07-05T18:35:05.184950+00:00", "path": "/private/secret8.html", "class": "forbidden", "status": 451, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.18538, "iso": "2026-07-05T18:35:05.185380+00:00", "path": "/private/secret9.html", "class": "forbidden", "status": 451, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276505.18577, "iso": "2026-07-05T18:35:05.185770+00:00", "path": "/private/secret10.html", "class": "forbidden", "status": 451, "crawler": "naive-crawler/1.0"}
+{"ts": 1783276559.612869, "iso": "2026-07-05T18:35:59.612869+00:00", "path": "/", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276559.727189, "iso": "2026-07-05T18:35:59.727189+00:00", "path": "/public/page19.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276559.726971, "iso": "2026-07-05T18:35:59.726971+00:00", "path": "/private/secret7.html", "class": "forbidden", "status": 451, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276559.7271428, "iso": "2026-07-05T18:35:59.727143+00:00", "path": "/private/secret8.html", "class": "forbidden", "status": 451, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276559.727333, "iso": "2026-07-05T18:35:59.727334+00:00", "path": "/private/secret9.html", "class": "forbidden", "status": 451, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276559.72712, "iso": "2026-07-05T18:35:59.727121+00:00", "path": "/public/page16.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276559.727325, "iso": "2026-07-05T18:35:59.727325+00:00", "path": "/private/secret10.html", "class": "forbidden", "status": 451, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276559.7275069, "iso": "2026-07-05T18:35:59.727507+00:00", "path": "/private/secret6.html", "class": "forbidden", "status": 451, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276559.727494, "iso": "2026-07-05T18:35:59.727494+00:00", "path": "/private/secret5.html", "class": "forbidden", "status": 451, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276560.730025, "iso": "2026-07-05T18:36:00.730026+00:00", "path": "/public/page17.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276560.730363, "iso": "2026-07-05T18:36:00.730364+00:00", "path": "/public/page18.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276560.7309499, "iso": "2026-07-05T18:36:00.730952+00:00", "path": "/private/secret2.html", "class": "forbidden", "status": 451, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276560.729988, "iso": "2026-07-05T18:36:00.729989+00:00", "path": "/public/page15.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276560.7305942, "iso": "2026-07-05T18:36:00.730595+00:00", "path": "/private/secret1.html", "class": "forbidden", "status": 451, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276560.72992, "iso": "2026-07-05T18:36:00.729922+00:00", "path": "/public/page20.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276560.743823, "iso": "2026-07-05T18:36:00.743824+00:00", "path": "/public/page13.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276560.7438872, "iso": "2026-07-05T18:36:00.743888+00:00", "path": "/public/page8.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276560.74398, "iso": "2026-07-05T18:36:00.743982+00:00", "path": "/public/page7.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276560.744021, "iso": "2026-07-05T18:36:00.744022+00:00", "path": "/public/page9.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276560.743934, "iso": "2026-07-05T18:36:00.743937+00:00", "path": "/public/page10.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276560.750462, "iso": "2026-07-05T18:36:00.750463+00:00", "path": "/public/page1.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276560.750517, "iso": "2026-07-05T18:36:00.750517+00:00", "path": "/public/page6.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276560.7505898, "iso": "2026-07-05T18:36:00.750591+00:00", "path": "/public/page5.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276560.750602, "iso": "2026-07-05T18:36:00.750603+00:00", "path": "/public/page4.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276560.75056, "iso": "2026-07-05T18:36:00.750562+00:00", "path": "/public/page2.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276560.750617, "iso": "2026-07-05T18:36:00.750618+00:00", "path": "/public/page3.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276561.7278342, "iso": "2026-07-05T18:36:01.727837+00:00", "path": "/private/secret4.html", "class": "forbidden", "status": 451, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276561.727979, "iso": "2026-07-05T18:36:01.727981+00:00", "path": "/private/secret3.html", "class": "forbidden", "status": 451, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276561.744226, "iso": "2026-07-05T18:36:01.744228+00:00", "path": "/public/page12.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276561.744521, "iso": "2026-07-05T18:36:01.744521+00:00", "path": "/public/page14.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276561.744292, "iso": "2026-07-05T18:36:01.744293+00:00", "path": "/public/page11.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276584.4758751, "iso": "2026-07-05T18:36:24.475875+00:00", "path": "/", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276584.589309, "iso": "2026-07-05T18:36:24.589310+00:00", "path": "/public/page19.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276584.58905, "iso": "2026-07-05T18:36:24.589050+00:00", "path": "/private/secret5.html", "class": "forbidden", "status": 451, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276584.588979, "iso": "2026-07-05T18:36:24.588980+00:00", "path": "/private/secret8.html", "class": "forbidden", "status": 451, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276584.589132, "iso": "2026-07-05T18:36:24.589133+00:00", "path": "/private/secret7.html", "class": "forbidden", "status": 451, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276584.589074, "iso": "2026-07-05T18:36:24.589074+00:00", "path": "/private/secret10.html", "class": "forbidden", "status": 451, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276584.58948, "iso": "2026-07-05T18:36:24.589480+00:00", "path": "/public/page16.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276584.589212, "iso": "2026-07-05T18:36:24.589212+00:00", "path": "/private/secret6.html", "class": "forbidden", "status": 451, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276584.5893571, "iso": "2026-07-05T18:36:24.589357+00:00", "path": "/private/secret9.html", "class": "forbidden", "status": 451, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276585.591765, "iso": "2026-07-05T18:36:25.591766+00:00", "path": "/public/page15.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276585.591941, "iso": "2026-07-05T18:36:25.591942+00:00", "path": "/public/page18.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276585.592206, "iso": "2026-07-05T18:36:25.592207+00:00", "path": "/public/page17.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276585.592159, "iso": "2026-07-05T18:36:25.592160+00:00", "path": "/public/page20.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276585.592294, "iso": "2026-07-05T18:36:25.592295+00:00", "path": "/private/secret1.html", "class": "forbidden", "status": 451, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276585.603314, "iso": "2026-07-05T18:36:25.603315+00:00", "path": "/public/page7.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276585.6032891, "iso": "2026-07-05T18:36:25.603290+00:00", "path": "/public/page9.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276585.603117, "iso": "2026-07-05T18:36:25.603117+00:00", "path": "/public/page13.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276585.603571, "iso": "2026-07-05T18:36:25.603571+00:00", "path": "/public/page12.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276585.603538, "iso": "2026-07-05T18:36:25.603539+00:00", "path": "/public/page11.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276585.603174, "iso": "2026-07-05T18:36:25.603175+00:00", "path": "/public/page8.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276585.603898, "iso": "2026-07-05T18:36:25.603898+00:00", "path": "/public/page14.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276585.6094851, "iso": "2026-07-05T18:36:25.609486+00:00", "path": "/public/page5.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276585.6092658, "iso": "2026-07-05T18:36:25.609266+00:00", "path": "/public/page3.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276585.609588, "iso": "2026-07-05T18:36:25.609588+00:00", "path": "/public/page6.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276585.6095219, "iso": "2026-07-05T18:36:25.609524+00:00", "path": "/public/page2.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276585.609567, "iso": "2026-07-05T18:36:25.609568+00:00", "path": "/public/page4.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276585.613046, "iso": "2026-07-05T18:36:25.613047+00:00", "path": "/public/page1.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276586.591018, "iso": "2026-07-05T18:36:26.591019+00:00", "path": "/private/secret4.html", "class": "forbidden", "status": 451, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276586.5908859, "iso": "2026-07-05T18:36:26.590888+00:00", "path": "/private/secret2.html", "class": "forbidden", "status": 451, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276586.5910652, "iso": "2026-07-05T18:36:26.591066+00:00", "path": "/private/secret3.html", "class": "forbidden", "status": 451, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}
+{"ts": 1783276586.601683, "iso": "2026-07-05T18:36:26.601685+00:00", "path": "/public/page10.html", "class": "allowed", "status": 200, "crawler": "Scrapy/2.16.0 (+https://scrapy.org)"}

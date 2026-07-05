@@ -1,0 +1,12 @@
+label,mode,coverage,politeness,policy_fidelity,allowed_fetched,allowed_total,forbidden_accessed,forbidden_blocked,forbidden_total,peak_req_per_min,rate_limit
+Naive,robots,1.0,1.0,0.0,20,20,10,0,10,30,30
+Naive-CPNP,cpnp,1.0,1.0,1.0,20,20,0,10,10,30,30
+Scrapy-obey,robots,1.0,1.0,1.0,20,20,0,0,10,20,30
+Naive (robots),robots,0.0,1.0,1.0,0,20,0,0,10,0,30
+Naive,robots,1.0,1.0,0.0,20,20,10,0,10,30,30
+Naive-CPNP,cpnp,1.0,1.0,1.0,20,20,0,10,10,30,30
+Scrapy-obey,robots,1.0,1.0,1.0,20,20,0,0,10,20,30
+Naive (cpnp),cpnp,1.0,0.0,1.0,20,20,0,10,10,31,30
+Scrapy (obey),robots,1.0,0.0,1.0,20,20,0,10,10,62,30
+Scrapy (ignore),robots,1.0,0.0,1.0,20,20,0,10,10,62,30
+Heritrix,robots,1.0,0.0,1.0,20,20,0,10,10,62,30

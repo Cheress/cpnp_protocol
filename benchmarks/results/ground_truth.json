@@ -1,0 +1,38 @@
+{
+  "allowed": [
+    "/public/page1.html",
+    "/public/page2.html",
+    "/public/page3.html",
+    "/public/page4.html",
+    "/public/page5.html",
+    "/public/page6.html",
+    "/public/page7.html",
+    "/public/page8.html",
+    "/public/page9.html",
+    "/public/page10.html",
+    "/public/page11.html",
+    "/public/page12.html",
+    "/public/page13.html",
+    "/public/page14.html",
+    "/public/page15.html",
+    "/public/page16.html",
+    "/public/page17.html",
+    "/public/page18.html",
+    "/public/page19.html",
+    "/public/page20.html"
+  ],
+  "forbidden": [
+    "/private/secret1.html",
+    "/private/secret2.html",
+    "/private/secret3.html",
+    "/private/secret4.html",
+    "/private/secret5.html",
+    "/private/secret6.html",
+    "/private/secret7.html",
+    "/private/secret8.html",
+    "/private/secret9.html",
+    "/private/secret10.html"
+  ],
+  "rate_limit": 30,
+  "mode": "cpnp"
+}
