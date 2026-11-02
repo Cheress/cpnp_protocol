@@ -1,0 +1,45 @@
+{
+  "measured_on": "2026-11-02T18:47:54.457596+00:00",
+  "scenarios": 5000,
+  "seed": 42,
+  "N_max": 6,
+  "R_0": 20,
+  "concession_step": 2,
+  "policy_max_rate": 30,
+  "agreement_rate_pct": 18.24,
+  "rejection_rate_pct": 81.76,
+  "mean_rounds_to_agreement": 2.209,
+  "agreed": 912,
+  "rejected": 4088,
+  "rejection_causes": {
+    "PURPOSE_NOT_ALLOWED": {
+      "count": 2002,
+      "pct_of_all": 40.04,
+      "pct_of_rejections": 48.97
+    },
+    "MISSING_DATA_USE_COMMITMENT": {
+      "count": 615,
+      "pct_of_all": 12.3,
+      "pct_of_rejections": 15.04
+    },
+    "WALKAWAY_RATE_BELOW_MINIMUM": {
+      "count": 233,
+      "pct_of_all": 4.66,
+      "pct_of_rejections": 5.7
+    },
+    "MAX_ROUNDS_EXCEEDED": {
+      "count": 1238,
+      "pct_of_all": 24.76,
+      "pct_of_rejections": 30.28
+    }
+  },
+  "scenario_distribution": {
+    "requested_rate": "uniform int [5,200]",
+    "requested_paths": "1-4 from 10-path pool (4 admissible, 3 denied, 3 unknown)",
+    "declared_purpose": "uniform over 5 (3 permitted, 2 not)",
+    "commitments": "80% complete, 20% omit one required",
+    "minimum_rate": "75% none, 25% uniform [5,40]",
+    "strategy": "uniform over {accepts, concedes, stubborn}"
+  },
+  "interpretation": "Of 5000 scenarios drawn from the declared distribution, 18.24% reached agreement. The agreement rate is a function of this distribution, not a fixed protocol constant; the rejection-cause breakdown shows that the majority of non-agreements stem from hard constraints (impermissible purpose or missing commitment) that no amount of negotiation can resolve, rather than from negotiation failure."
+}
